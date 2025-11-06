@@ -16,7 +16,6 @@ const Art = () => {
 		end: 'bottom center',
 		scrub: 1.5,
 		pin: true,
-		markers: true,
 	 }
 	})
 	
@@ -34,7 +33,7 @@ const Art = () => {
 		<div className="content">
 		 <ul className="space-y-4 will-fade">
 			{goodLists.map((feature, index) => (
-			 <li key={index} className="flex items-center justify-center sm:justify-start gap-2">
+			 <li key={index} className="flex items-center justify-start mx-19 sm:mx-0 sm:justify-start gap-2">
 				<img src="/images/check.png" alt="check" />
 				<p>{feature}</p>
 			 </li>
@@ -51,7 +50,7 @@ const Art = () => {
 		 
 		 <ul className="space-y-4 will-fade">
 			{featureLists.map((feature, index) => (
-			 <li key={index} className="flex items-center sm:justify-start justify-end gap-2">
+			 <li key={index} className="flex items-center sm:justify-start mx-19 sm:mx-0 justify-end gap-2">
 				<img src="/images/check.png" alt="check" />
 				<p className="md:w-fit w-60">{feature}</p>
 			 </li>
